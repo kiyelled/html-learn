@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--왕왕초보의 웹입니다.. 저도 슬퍼요-->
+    <meta charset="UTF-8">
+    <title>Resume_Dotio_Lounge</title>
+
+    <style>
+        body {
+            background-color: #333333;
+            color: white;
+        }
+        h1 {text-align: center}
+        fieldset { width: 932px }
+
+    </style>
+    <style>
+        #header {
+            height: 100px;
+            width: 932px;
+            padding: 25px 68px 0 68px;
+        }
+        #main {
+            height: 900px;
+            width: 932px;
+            padding: 30px 68px;
+        }
+        #section1 {
+            width: 932px;
+        }
+        #section2 {
+            width: 932px;
+        }
+        #section3 {
+            width: 932px;
+        }
+        #section4 {
+            width: 932px;
+        }
+        #footer {
+            height: 50px;
+            width: 932px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <a href="http://thedotio.com"><img src="../../Desktop/cs/image/dotio_text.svg" height="21.25"/></a>
+        <h1>더도티오라운지 이력서</h1>
+    </div>
+
+    <div id="main">
+        <div id="section1">
+            <form>
+                <fieldset>
+                    <legend>인적사항</legend>
+                    이름<br>
+                    <input type="text" name="username"><br>
+                    이메일<br>
+                    <input type="text" name="email"><br>
+                    전화번호<br>
+                    <input type="text" name="number"><br>
+                    프로필사진<br><!--사진업로드후 확인시켜주는 거 어떻게 하는 건가요 대체 아직 안배운 거죠?-->
+                    <input type="file" name="upload_file" accept="image/*">
+                </fieldset>
+            </form>
+
+        </div>
+        <br>
+        <div id="section2"><!--section1이랑 좌우로 나란히 배열하고 싶었는데 높이 맞추는 것도 못하겠고요.. 갈길이 멀다-->
+            <form>
+                <fieldset>
+                    <legend>학력사항</legend>
+                    최종학력<br>
+                        <select name="최종학력">
+                        <option value="elementary"> 초등학교
+                        <option value="middle"> 중학교
+                        <option value="high"> 고등학교
+                        <option value="university"> 대학교
+                        </select><br>
+                    전공<br>
+                    <input type="text" name="major">
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <div id="section3">
+            <form>
+                <fieldset>
+                    <legend>희망근무조건</legend>
+                    기간<br>
+                    <input type="radio" name="period" value="below3m" checked> 3개월 미만 <br>
+                    <input type="radio" name="period" value="3mto6m"> 3개월 이상 6개월 미만 <br>
+                    <input type="radio" name="period" value="6mto1y"> 6개월 이상 1년 미만 <br>
+                    <input type="radio" name="period" value="6yormore"> 1년 이상<br><br>
+                    관심업무<br>
+                    <input type="checkbox" name="work" value="coffee" checked> 커피 및 음료 <br>
+                    <input type="checkbox" name="work" value="baking"> 베이킹 <br>
+                    <input type="checkbox" name="work" value="service"> 서비스 및 고객응대 <br>
+                    <input type="checkbox" name="work" value="management"> 재고관리 및 총괄
+
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <div id="section4">
+            <form>
+                <fieldset>
+                    <legend>자기소개 및 경력사항</legend>
+                   <textarea name="message" rows="10" cols="130">여기에 적으세요.</textarea>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+    <div id="footer">
+        <form align="right">
+            <input type="submit" value="저장하기">
+        </form>
+    </div>
+
+</body>
+</html>

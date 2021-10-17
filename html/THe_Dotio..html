@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THe Dotio.</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li { float: left; }
+        li a {
+            display: block;
+            padding: 14px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+    </style><!--스타일싯으로 빼면 좋았을텐데 너무 늦게 생각해냄ㅜ 이름 설정도 신중해야할 듯-->
+    <style>
+        .box1 {
+            background-color: #333333;
+            color: white;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+        }
+        .navbar {
+            padding: 20px 70px;
+            align-content: center;
+        }
+        .title {
+            padding: 40px 60px 0 60px;
+            font-size: xx-large;
+            text-align: center;
+            letter-spacing: -2px;
+        }
+        .intro {
+            padding: 0 70px;
+            margin-top: -20px;
+            text-align: center;
+        }
+        .botton {
+            padding: 40px 0 200px 0;
+            text-align: center;
+        }
+        .botton-link {
+            border: 1px solid;
+            border-radius: 2px;
+            border-color: white;
+            padding: 14px 32px;
+            font-size: small;
+            color: white;
+            text-decoration: none;
+        }
+        .botton-link:hover {
+            background-color: #818181;
+            border-color: #818181;
+        }
+        .box2 {
+            background-color: white;
+            color: #000000;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+        }
+        .intro-member {
+            padding-top: 70px;
+            text-align: center;
+            letter-spacing: -2px;
+            font-size: large;
+        }
+        .managers {
+            margin-top: -10px;
+            text-align: center;
+        }
+        .maybejs {
+            text-align: center;
+            flex-direction: row;
+            padding-bottom: 40px;
+        }
+        .box3 {
+            background-color: white;
+            color: black;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            text-align: center;
+        }
+        .intro-business {
+            padding-top: 70px;
+            text-align: center;
+            letter-spacing: -2px;
+            font-size: large;
+        }
+        .business {
+            margin-top: -10px;
+            text-align: center;
+        }
+        .dotio-business {
+            text-align: center;
+            flex-direction: row;
+            padding: 20px 0;
+        }
+        .box4 {
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        .intro-review {
+            padding-top: 70px;
+            text-align: center;
+            letter-spacing: -2px;
+            font-size: large;
+        }
+        .review {
+            margin-top: -10px;
+        }
+        .review-box {
+            padding-top: 40px;
+            justify-content: center;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .review-content {
+            width: 500px;
+            background-color: #fdf2f2;
+            color: black;
+            border-radius: 10px;
+            margin: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .review-photo {
+            width: 50px;
+            height: 50px;
+            float: left;
+            padding: 40px 20px 0 40px;
+        }
+        .review-text {
+            float: right;
+            padding: 20px 40px 20px 20px;
+            text-align: left;
+        }
+        .box5 {
+            color: white;
+            width: 100%; height: 100%;
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .followme {
+            width: 1020px;
+            height: 400px;
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../Desktop/cs/image/followme.jpg");
+            text-align: center;
+            padding-top: 40px;
+            border-radius: 10px;
+        }
+        .contactus {
+            padding: 50px;
+        }
+        .box6 {
+            width: 100%; height: 100%;
+            padding-top: 60px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .aboutus {
+            padding: 30px;
+            background-color: #f0f0f0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="box1"><!--로고, 우측 상단 메뉴, 첫 화면(질문: 박스로 하니까 색이 전체적으로 칠해지지 않는데 해결방법이 뭘까요)-->
+    <div class="navbar">
+        <ul>
+            <li><a href=""><img src="../../Desktop/cs/image/dotio_text.svg" height="21.3"/></a></li>
+            <ul style="float:right; list-style-type:none;"><!--마우스포인트 대면 밑에 줄 사악 부드럽게 그어지는 거 뭔지 모르겠습니다-->
+                <li><a href="#intro-member">Member</a></li>
+                <li><a href="#dotio-business">Business</a></li>
+                <li><a href="#dotio-review">Review</a></li>
+            </ul>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>Let's dream specifically 💻 ☕️</h1>
+    </div>
+    <div class="intro">
+        <p style="font-size: small; letter-spacing: -1px; font-weight: bold"> 더도티오는 20대 중반 소프트웨어 엔지니어 네명이 모여 만든 IT 소프트웨어 개발 기업입니다.<br>
+            웹, 애플리케이션 유지보수, 서식 자동화 등 외부 프로젝트 제작부터 소상공인을 위한 발주양 예측 및 정기배송 B2B 서비스, 라운지 카페까지.
+        </p>
+    </div>
+    <div class="botton">
+        <a class="botton-link" href="#intro-member">더 알아보기</a>
+    </div>
+</div>
+
+<div class="box2"><!--팀원 소개 부분-->
+    <div class="intro-member">
+        <h1 id="intro-member">우리 팀원 소개</h1><!--부드럽게 넘어가면서 연결되는 건 어떻게 하는 건가요?-->
+    </div>
+    <div class="managers">
+        <p style="color: #626262; font-size: small">각자의 개성이 뚜렷한 도티오의 매니저들입니다.</p>
+    </div>
+    <div class="maybejs"><!--갖다 대면 싹 정보 뜨고 확대 되는 거 어떻게 하는 걸까욥,,-->
+        <img src="../../Desktop/cs/image/commak.png" height="400" width="200" alt="콤마사진"/>
+        <img src="../../Desktop/cs/image/raink (1).png" height="400" width="200" alt="레인사진"/>
+        <img src="../../Desktop/cs/image/tonyk(2).png" height="400" width="200" alt="토니사진"/>
+        <img src="../../Desktop/cs/image/paperl (1).png" height="400" width="200" alt="페이퍼사진"/>
+    </div>
+</div>
+
+<div class="box3"><!--비즈니스 소개 부분-->
+    <div class="intro-business">
+        <h1 id="dotio-business">도티오 비즈니스</h1>
+    </div>
+    <div class="business">
+        <p style="color: #626262; font-size: small">도티오는 가치있는 것을 만들어냅니다.</p>
+    </div>
+    <div class="dotio-business"><!--본페이지에서 사진을 캡처해서 올릴까 하다가 일단 비워뒀다가 뇌절 와서 사진 이걸로 함-->
+        <img src="../../Desktop/cs/image/단체.png" height="600" width="800"/>
+        <p>멋진! 빛나는! 근사한! 끝내주는!</p>
+    </div><!--박스 세개 만들고 flex로 가로 정렬 후 각 상자 내에 float으로 사진은 위에 띄우고 글은 아래 띄웠을 것-->
+</div><!--[정보] 이쯤에서 죽고 싶엇슴-->
+
+<div class="box4"><!--후기 소개 부분-->
+    <div class="intro-review">
+        <h1 id="dotio-review">도티오 후기</h1>
+    </div>
+    <div class="review">
+        <p style="color: #626262; font-size: small">도티오는 가치있는 것을 만들어냅니다.</p>
+    </div>
+    <div class="review-box">
+        <div class="review-content">
+            <div class="review-photo">
+                <img src="../../Desktop/cs/image/user.png" height="50" width="40"/></div>
+            <div class="review-text">
+                <p>기존에 단순 반복하던 업무를 자동화하여 엑셀 파일을 자동으로 만들어주는 프로그램을 만들어주셨어요.
+                    잦은 야근에 시달리다가 더도티오 덕에 숨통이 트인 기분이랍니다.</p>
+                <h4 style="letter-spacing: -1px">세무관련 업무 자동화 의뢰 고객님 (더도티오)<br>💜💜💜💜💜</h4>
+            </div>
+        </div>
+        <div class="review-content">
+            <div class="review-photo">
+                <img src="../../Desktop/cs/image/user.png" height="50" width="40"/></div>
+            <div class="review-text">
+                <p>회사 내에서 백엔드와 클라우드 엔지니어가 없어 의뢰를 했고 합리적인 가격과
+                안정적인 시스템을 구축해주셨습니다.</p>
+                <h4 style="letter-spacing: -1px">투표 관련 백엔드 RESTful-API 제작 의뢰 고객님(더도티오)<br>💜💜💜💜💜</h4>
+            </div>
+        </div>
+        <div class="review-content">
+            <div class="review-photo">
+                <img src="../../Desktop/cs/image/user.png" height="50" width="40"/></div>
+            <div class="review-text">
+                <p>정릉에서 정해 두고 자주 가는 카페는 그간 없었는데, 커피와 에이드 맛이 좋아 상반기 동안 가장 많이 다녀온 곳에 등극했네요.
+                     향기로운 카페라떼와 민트초코라떼가 저의 two pick이 되었어요.
+                    처음 가 보실 분들은 참고하세요! 에이드는 너무 달지 않으면서도 상큼해 갈증 날 때 좋았고, 토피 쿠키는 쫜득해요 🍪
+                    귀여운 크로플은 겉바속쫀 😙 공간 구석구석이 깔끔해요.
+                    늘 친절하신 도티오 식구님들, 입맛에 잘 맞는 음료 가까이서 접하게 해주셔서 감사합니다.🌷</p>
+                <h4 style="letter-spacing: -1px">햄스터의 심장님 (더도티오 라운지 네이버 리뷰)<br>💜💜💜💜💜</h4>
+            </div>
+        </div>
+        <div class="review-content">
+            <div class="review-photo">
+                <img src="../../Desktop/cs/image/user.png" height="50" width="40"/></div>
+            <div class="review-text">
+                <p>전에 무슨건으로 서비스요청 해도 된다셔서 원래 아이스크림 시킨거에 조금만 더 담아달라고 말씀드렸는데, 아예 새로 서비스를 팍팍 넣어주셨네요 ㅠㅠ
+                    아이공,, 오늘 먹을 사람이 적어서 넘 조금시켜서 서비스 요청이 좀 미안해서 그랬던건데... 더 미안해져버렸네요. 고맙습니다. 정말 잘 먹었어요~
+                    평일에는 늦게 퇴근하는 날이많아서 먹고싶어도 못먹는날이 많았는데, 주말이라 간만에 시키려고 보니 메뉴가 많이 늘었네요!
+                    크로플만 먹다가 질릴걸 대비해서 쿠키, 음료 욕심쟁이를 위한 보틀이라니..! 너무 똑똑해서 또 찾을 수 밖에 없겠네요 ㅠㅠ..
+                    앞으로 더 잘되어서 규모가 커지면 어떤 식으로 운영하실지 기대되는 가게입니다~ 맛있는집 도티오:)</p>
+                <h4 style="letter-spacing: -1px">포챠펭님 (더도티오 라운지 딜리버리 서비스 후기)<br>💜💜💜💜💜</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box5"><!--윤여정 소개 부분-->
+    <div class="followme">
+        <div class="contactus">
+            <h1 style="line-height: 200%;">도티오는 당신과 함께 여정을 떠나고 싶습니다.<br>도티오는 꿈을 현실로 바꿉니다.</h1>
+            <div class="botton">
+                <a class="botton-link" href="mailto: admin@thedotio.com" style="">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box6"><!--우리가 누구냐면-->
+    <div class="aboutus">
+        <p style="font-weight: bold">About Us</p>
+        <p>The-dotio<br>상호: 더도티오, 사업자등록번호: 560-53-00551, 대표: 이종휘<br>통신판매업 신고번호 : 제 2021-서울성북-0910호<br>
+            🚌<a href="http://naver.me/xxxAxuFA" target="_blank" style=" color: black; text-decoration: none">서울특별시 성북구 솔샘로6길 36-16 B01 더도티오 라운지, 더도티오 IT 사무소</a><br>
+            📧<a href="mailto: admin@thedotio.com" style="color: black; text-decoration: black">admin@thedotio.com</a><br>
+            📱+82 070-7778-6161<br>
+            📞+82 02-910-8820
+        </p>
+    </div>
+
+</div>
+
+</body>
+
+</html>
